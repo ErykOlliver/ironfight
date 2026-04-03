@@ -30,7 +30,7 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${inter.variable} ${bebas.variable} h-screen w-screen antialiased`}
     >
-      <body className="min-h-full min-w-full flex flex-col">{children}</body>
+      <body className="min-h-full min-w-full flex relative flex-col">{children}</body>
     </html>
   );
 }

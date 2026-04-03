@@ -5,7 +5,7 @@ import { LuCheckCheck } from 'react-icons/lu'
 
 export default function Hero() {
     return (
-        <section className='relative w-full h-screen flex flex-col border items-center justify-end py-17 gap-4'>
+        <section className='relative w-full min-h-screen flex flex-col border items-center justify-end pt-27 pb-17 gap-4'>
             <div className='w-full h-full absolute bg-linear-to-t from-black via-black/80 to-transparent -z-1 top-0' />
             <div className='w-full h-full absolute bg-black/10 -z-1 top-0' />
 
