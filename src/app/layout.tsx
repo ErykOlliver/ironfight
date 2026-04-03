@@ -9,9 +9,10 @@ export const metadata: Metadata = {
   description: "Academia",
 };
 
-const Bebas = Bebas_Neue({
+const bebas = Bebas_Neue({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: '400',
+  variable: '--font-bebas-neue',
 })
 
 const inter = Inter({
@@ -27,9 +28,9 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${inter.variable} h-full antialiased`}
+      className={`${inter.variable} ${bebas.variable} h-screen w-screen antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full min-w-full flex flex-col">{children}</body>
     </html>
   );
 }
