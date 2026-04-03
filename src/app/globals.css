@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+
+@theme {
+    --text-hero: 3rem;
+    --text-hero--line-height: 3.1875rem;
+
+    --text-3xl: 2.5rem;
+    --text-3xl--line-height: 3.2rem;
+
+    --text-2xl: 2rem;
+    --text-2xl--line-height: 3.2rem;
+
+    --text-xl: 1.625rem;
+    --text-xl--line-height: 2.0625rem;
+
+    --text-lg: 1.25rem;
+    --text-lg--line-height: 1.5rem;
+
+    --text-body: 1rem;
+    --text-body--line-height: 1.6rem;
+
+    --text-md: 0.875rem;
+    --text-md--line-height: 1.4rem;
+
+    --text-xs: 0.75rem;
+    --text-xs--line-height: 1.2rem;
+
+    --font-bebas-neue: var(--font-bebas);
+    --font-inter: var(--font-inter);
+
+    /* ── BLACK FOUNDATION ── */
+    --color-obsidian: #0F0F10;
+    --color-carbon: #1A1A1C;
+    --color-gunmetal: #242427;
+    --color-graphite: #2E2E33;
+
+    /* ── WHITE SYSTEM ── */
+    --color-forge-white: #FFFFFF;
+    --color-ivory: #F5F5F5;
+    --color-silver: #CFCFD4;
+    --color-steel: #A1A1AA;
+
+    /* ── YELLOW IDENTITY ── */
+    --color-iron-gold: #F4C430;
+    --color-amber: #E6B800;
+    --color-combat-glow: #FFD84D;
+    --color-warning-strike: #C99700;
+
+    /* ── SUPPORT ACCENTS ── */
+    --color-tac-blue: #1E3A8A;
+    --color-signal-blue: #2563EB;
+    --color-sky: #3B82F6;
+
+    /* ── SUCCESS ── */
+    --color-victory: #16A34A;
+    --color-emerald: #22C55E;
+
+    /* ── ERROR ── */
+    --color-red: #DC2626;
+    --color-crimson: #B91C1C;
+
+    /* ── WARNING ── */
+    --color-bronze: #D97706;
+}
