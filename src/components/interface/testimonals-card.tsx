@@ -8,9 +8,13 @@ type props = {
 
 export default function TestimonalsCard({ name, testimonial }: props) {
     return (
-        <article className='bg-obsidian border-2 px-4 py-5 shadow-bronze/45 shadow-[0_0_4px] gap-4 rounded-md border-graphite  flex flex-col items-start justify-center'>
+        <article className='
+            bg-obsidian border-2 px-4 py-5 shadow-bronze/45 shadow-[0_0_4px] gap-4 rounded-md border-graphite
+            flex flex-col items-start justify-center
+            lg:transition-all lg:duration-200 lg:hover:border-iron-gold/40 lg:hover:shadow-bronze/60
+        '>
             <div className='w-fit h-fit p-1 flex items-center justify-center'>
-            <ImQuotesRight className='text-graphite size-10' />
+                <ImQuotesRight className='text-graphite size-10 lg:text-iron-gold/20' />
             </div>
             <div className='flex w-full flex-col gap-2 h-fit'>
                 <h1 className='italic text-md font-inter text-forge-white'>"{testimonial}"</h1>
