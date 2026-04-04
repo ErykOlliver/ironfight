@@ -12,28 +12,53 @@ export default function NavBar() {
         <>
             <div className='w-[95%] h-fit backdrop-blur-md shadow-xs shadow-black/50 bg-obsidian/55 items-center justify-between flex py-2 rounded-md border-[0.5] border-silver z-1500 px-7.5 fixed top-0 left-1/2 -translate-x-1/2 mt-2'>
                 <div className='w-fit h-fit flex gap-3 items-center justify-center'>
-                    <Image src={"/logo.svg"} width={35} height={35} alt='Iron Fight Icon' className='' />
+                    <Image src={"/logo.svg"} width={35} height={35} alt='Iron Fight Icon' />
                     <h1 className='font-bebas-neue text-lg text-forge-white'>Iron Fight</h1>
                 </div>
+
+                <nav className='hidden lg:flex items-center gap-1'>
+                    {[
+                        { label: 'HOME', href: '/' },
+                        { label: 'PROVA SOCIAL', href: '/prova-social' },
+                        { label: 'MODALIDADES', href: '/modalidades' },
+                        { label: 'SOBRE', href: '/sobre' },
+                        { label: 'HORÁRIOS', href: '/horarios' },
+                        { label: 'FAQ', href: '/faq' },
+                    ].map(({ label, href }) => (
+                        <Link
+                            key={label}
+                            href={href}
+                            className='select-none text-xs font-inter font-semibold text-silver hover:text-iron-gold transition-colors duration-150 uppercase px-3 py-1.5 rounded-sm hover:bg-white/5'
+                        >
+                            {label}
+                        </Link>
+                    ))}
+                    <Link
+                        href={''}
+                        className='ml-3 select-none text-xs font-inter font-semibold text-obsidian bg-iron-gold hover:brightness-110 transition-all duration-150 uppercase px-4 py-2 rounded-full border-l border-t border-forge-white/60'
+                    >
+                        AULA EXPERIMENTAL
+                    </Link>
+                </nav>
+
                 {enabledMenu ? (
-                    <LuX className=' size-7 text-white' onClick={() => setEnabledMenu(false)} />
+                    <LuX className='size-7 text-white lg:hidden' onClick={() => setEnabledMenu(false)} />
                 ) : (
-                    <LuMenu className='size-7 text-white' onClick={() => setEnabledMenu(true)} />
+                    <LuMenu className='size-7 text-white lg:hidden' onClick={() => setEnabledMenu(true)} />
                 )}
             </div>
 
             {enabledMenu && (
                 <>
-                    <div onClick={() => setEnabledMenu(false)} className='bg-black/40 w-screen h-screen z-1000 fixed' />
-
-                    <div className='p-3 w-60 max-w-70 h-fit gap-2.5 flex flex-col items-center justify-start backdrop-blur-md shadow-xs shadow-black/50 bg-obsidian/55 right-3 top-18 rounded-md border-[0.5] border-silver fixed z-2000'>
+                    <div onClick={() => setEnabledMenu(false)} className='bg-black/40 w-screen h-screen z-1000 fixed lg:hidden' />
+                    <div className='p-3 w-60 max-w-70 h-fit gap-2.5 flex flex-col items-center justify-start backdrop-blur-md shadow-xs shadow-black/50 bg-obsidian/55 right-3 top-18 rounded-md border-[0.5] border-silver fixed z-2000 lg:hidden'>
                         <nav className='overflow-x-hidden overflow-y-auto gap-3 flex flex-col h-fit w-full'>
-                            <Link className='hover:text-primary-500 select-none text-sm font-inter text-forge-white transition-colors duration-150 uppercase border-b p-1 border-silver/30' href={'/portfolio'}>HOME</Link>
-                            <Link className='hover:text-primary-500 select-none text-sm font-inter text-forge-white transition-colors duration-150 uppercase border-b p-1 border-silver/30' href={'/contact'}>PROVA SOCIAL</Link>
-                            <Link className='hover:text-primary-500 select-none text-sm font-inter text-forge-white transition-colors duration-150 uppercase border-b p-1 border-silver/30' href={'/contact'}>MODALIDADES</Link>
-                            <Link className='hover:text-primary-500 select-none text-sm font-inter text-forge-white transition-colors duration-150 uppercase border-b p-1 border-silver/30' href={'/contact'}>SOBRE A IRON FIGHT</Link>
-                            <Link className='hover:text-primary-500 select-none text-sm font-inter text-forge-white transition-colors duration-150 uppercase border-b p-1 border-silver/30' href={'/contact'}>Horário e Localização</Link>
-                            <Link className='hover:text-primary-500 select-none text-sm font-inter text-forge-white transition-colors duration-150 uppercase border-b p-1 border-silver/30' href={'/contact'}>PERGUNTAS FREQUENTES</Link>
+                            <Link className='hover:text-primary-500 select-none text-sm font-inter text-forge-white transition-colors duration-150 uppercase border-b p-1 border-silver/30' href={'/'}>HOME</Link>
+                            <Link className='hover:text-primary-500 select-none text-sm font-inter text-forge-white transition-colors duration-150 uppercase border-b p-1 border-silver/30' href={'/prova-social'}>PROVA SOCIAL</Link>
+                            <Link className='hover:text-primary-500 select-none text-sm font-inter text-forge-white transition-colors duration-150 uppercase border-b p-1 border-silver/30' href={'/modalidades'}>MODALIDADES</Link>
+                            <Link className='hover:text-primary-500 select-none text-sm font-inter text-forge-white transition-colors duration-150 uppercase border-b p-1 border-silver/30' href={'/sobre'}>SOBRE A IRON FIGHT</Link>
+                            <Link className='hover:text-primary-500 select-none text-sm font-inter text-forge-white transition-colors duration-150 uppercase border-b p-1 border-silver/30' href={'/horarios'}>Horário e Localização</Link>
+                            <Link className='hover:text-primary-500 select-none text-sm font-inter text-forge-white transition-colors duration-150 uppercase border-b p-1 border-silver/30' href={'/faq'}>PERGUNTAS FREQUENTES</Link>
                         </nav>
                     </div>
                 </>
