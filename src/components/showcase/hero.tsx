@@ -10,9 +10,7 @@ export default function Hero() {
             flex flex-col items-center justify-end pt-27 pb-17 gap-4
             lg:flex-row lg:items-end lg:justify-start lg:pt-0 lg:pb-0 lg:gap-0
         '>
-            <div className='w-full h-full absolute bg-linear-to-t from-obsidian via-black/80 to-transparent -z-1 top-0
-                lg:bg-[linear-gradient(to_right,rgba(10,10,10,0.85)_0%,rgba(10,10,10,0.3)_55%,rgba(10,10,10,0.75)_100%),linear-gradient(to_top,#0a0a0a_0%,rgba(0,0,0,0.6)_40%,transparent_100%)]
-            ' />
+            <div className='w-full h-full absolute bg-linear-to-t from-obsidian via-black/80 to-transparent -z-1 top-0' />
             <div className='w-full h-full absolute bg-black/10 -z-1 top-0' />
 
             <video autoPlay loop muted playsInline className='absolute -z-2 inset-0 h-full w-full object-cover'>

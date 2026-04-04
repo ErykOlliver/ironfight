@@ -10,7 +10,7 @@ export default function NavBar() {
 
     return (
         <>
-            <div className='w-[95%] h-fit backdrop-blur-md shadow-xs shadow-black/50 bg-obsidian/55 items-center justify-between flex py-2 rounded-md border-[0.5] border-silver z-1500 px-7.5 fixed top-0 left-1/2 -translate-x-1/2 mt-2'>
+            <div className='w-[95%] md:w-[99%] h-fit backdrop-blur-md shadow-xs shadow-black/50 bg-obsidian/55 items-center justify-between flex py-2 rounded-md border-[0.5] border-silver z-1500 px-7.5 fixed top-0 left-1/2 -translate-x-1/2 mt-2'>
                 <div className='w-fit h-fit flex gap-3 items-center justify-center'>
                     <Image src={"/logo.svg"} width={35} height={35} alt='Iron Fight Icon' />
                     <h1 className='font-bebas-neue text-lg text-forge-white'>Iron Fight</h1>

@@ -6,6 +6,7 @@ import Modalities from "../components/showcase/modalities";
 import AboutGym from "../components/showcase/about-gym";
 import HoursAndLocation from "../components/showcase/hours-location";
 import Faq from "../components/showcase/faq";
+import Footer from "../components/showcase/footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <AboutGym/>
       <HoursAndLocation/>
       <Faq/>
+      <Footer/>
     </>
   );
 }
