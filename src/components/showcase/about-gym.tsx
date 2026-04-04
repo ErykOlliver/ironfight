@@ -30,6 +30,7 @@ export default function AboutGym() {
                         <div className='relative w-full h-full'>
                             <Image
                                 fill
+                                key={i}
                                 quality={100}
                                 priority
                                 src={photo.src}
