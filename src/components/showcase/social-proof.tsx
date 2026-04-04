@@ -52,7 +52,7 @@ export default function SocialProof() {
     const [lightboxIndex, setLightboxIndex] = useState(-1)
 
     return (
-        <section className='w-full h-fit flex flex-col gap-4 bg-obsidian items-center justify-center lg:gap-16 lg:py-20'>
+        <section id='social-proof' className='w-full h-fit flex flex-col gap-4 bg-obsidian items-center justify-center lg:gap-16 lg:py-20'>
 
             <header className='w-full gap-4 h-fit items-center px-7.5 justify-center flex flex-col lg:max-w-2xl lg:px-0'>
                 <div className='flex w-fit h-fit gap-1'>
@@ -142,7 +142,7 @@ export default function SocialProof() {
                     <article className='w-full gap-4 h-fit flex flex-col items-center justify-center'>
                         <h1 className='font-inter text-xl text-forge-white uppercase font-bold text-center'>Agora é a sua vez de <span className='text-iron-gold'> começar</span>.</h1>
                         <h2 className='font-inter text-base text-silver text-center'>Dê o primeiro passo. Sem pressão, sem experiência necessária.</h2>
-                        <Link href={''} className='bg-iron-gold border-l-2 shadow-[0_1px_10px] shadow-bronze border-t-2 rounded-full text-center w-full font-semibold font-inter border-forge-white p-4 uppercase'>AGENDAR AULA EXPERIMENTAL</Link>
+                        <Link href={'https://wa.link/qd7uoz'} target='_blank' className='bg-iron-gold border-l-2 shadow-[0_1px_10px] shadow-bronze border-t-2 rounded-full text-center w-full font-semibold font-inter border-forge-white p-4 uppercase'>AGENDAR AULA EXPERIMENTAL</Link>
                         <p className='font-inter text-silver underline text-center'>Primeira experiência sem compromisso</p>
                     </article>
 

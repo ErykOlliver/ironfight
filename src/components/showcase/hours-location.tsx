@@ -8,7 +8,7 @@ import { FaMapMarker, FaMapMarkerAlt, FaMapPin } from 'react-icons/fa'
 
 export default function HoursAndLocation() {
     return (
-        <section className='w-full h-fit flex flex-col gap-4 bg-obsidian items-center justify-center lg:gap-12 lg:py-20'>
+        <section id='hours-and-location' className='w-full h-fit flex flex-col gap-4 bg-obsidian items-center justify-center lg:gap-12 lg:py-20'>
 
             <header className='w-full gap-4 h-fit items-start px-7.5 pt-10 justify-center flex flex-col lg:max-w-2xl lg:px-0 lg:pt-0 lg:items-center'>
                 <h1 className='font-bebas-neue text-3xl text-forge-white text-center lg:text-5xl'>
@@ -56,7 +56,7 @@ export default function HoursAndLocation() {
                                 </div>
                             </div>
                         </div>
-                        <Link href={""} className='flex w-full h-fit gap-1 items-center justify-center uppercase text-md border-silver/25 border rounded-md p-2.5 text-forge-white lg:hover:border-iron-gold/40 lg:hover:text-iron-gold lg:transition-all lg:duration-150'>
+                        <Link href={"https://share.google/VMhCeBVb2NoWPrD20"} target='_blank' className='flex w-full h-fit gap-1 items-center justify-center uppercase text-md border-silver/25 border rounded-md p-2.5 text-forge-white lg:hover:border-iron-gold/40 lg:hover:text-iron-gold lg:transition-all lg:duration-150'>
                             <FaMapMarkerAlt className='text-red size-6' /> Ver no google maps
                         </Link>
                     </article>
@@ -70,7 +70,7 @@ export default function HoursAndLocation() {
                     <h2 className='font-inter text-base text-silver text-center'>
                         Escolha um horário e venha conhecer de perto.
                     </h2>
-                    <Link href={''} className='bg-iron-gold border-l-2 shadow-[0_1px_10px] shadow-bronze border-t-2 rounded-full text-center w-full font-semibold font-inter border-forge-white p-4 uppercase'>
+                    <Link href={'https://wa.link/qd7uoz'} target='_blank' className='bg-iron-gold border-l-2 shadow-[0_1px_10px] shadow-bronze border-t-2 rounded-full text-center w-full font-semibold font-inter border-forge-white p-4 uppercase'>
                         AGENDAR AULA EXPERIMENTAL
                     </Link>
                     <p className='font-inter text-silver underline text-center'>Sem burocracia. Chegou, treinou.</p>

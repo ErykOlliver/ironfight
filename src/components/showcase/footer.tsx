@@ -22,10 +22,10 @@ export default function Footer() {
                         Forje disciplina. Construa respeito. Transforme seu corpo. Jiu-Jitsu, Boxe e Treinamento Funcional em Nova Vitória, Camaçari.
                     </p>
                     <div className='flex gap-3 items-center mt-1'>
-                        <Link href='' className='text-silver hover:text-iron-gold transition-colors duration-150'>
+                        <Link href='https://www.instagram.com/ironfightacademia/' target='_blank' className='text-silver hover:text-iron-gold transition-colors duration-150'>
                             <FaInstagram className='size-5' />
                         </Link>
-                        <Link href='' className='text-silver hover:text-iron-gold transition-colors duration-150'>
+                        <Link href='https://wa.link/qd7uoz' target='_blank' className='text-silver hover:text-iron-gold transition-colors duration-150'>
                             <FaWhatsapp className='size-5' />
                         </Link>
                     </div>
@@ -37,16 +37,17 @@ export default function Footer() {
                     <p className='font-bebas-neue text-lg text-iron-gold tracking-widest uppercase'>Navegação</p>
                     <nav className='flex flex-col gap-2'>
                         {[
-                            { label: 'Home', href: '/' },
-                            { label: 'Modalidades', href: '/modalidades' },
-                            { label: 'Prova Social', href: '/prova-social' },
-                            { label: 'Sobre a Iron Fight', href: '/sobre' },
-                            { label: 'Horários e Localização', href: '/horarios' },
-                            { label: 'Perguntas Frequentes', href: '/faq' },
+                            { label: 'Home', href: '#hero' },
+                            { label: 'Modalidades', href: '#modalities' },
+                            { label: 'Prova Social', href: '#social-proof' },
+                            { label: 'Sobre a Iron Fight', href: '#about-gym' },
+                            { label: 'Horários e Localização', href: '#hours-and-location' },
+                            { label: 'Perguntas Frequentes', href: '#faq' },
                         ].map(({ label, href }) => (
                             <Link
                                 key={label}
                                 href={href}
+                                target='_blank'
                                 className='font-inter text-sm text-silver hover:text-iron-gold transition-colors duration-150 w-fit'
                             >
                                 {label}
@@ -86,12 +87,13 @@ export default function Footer() {
                     <div className='flex flex-col gap-1'>
                         <span className='font-inter text-sm text-forge-white font-medium'>Rua Padre Paulo Maria Tunuci</span>
                         <span className='font-inter text-sm text-silver'>Nova Vitória – Camaçari, BA</span>
-                        <Link href='' className='font-inter text-xs text-silver underline hover:text-iron-gold transition-colors duration-150 mt-1 w-fit'>
+                        <Link href='https://share.google/VMhCeBVb2NoWPrD20' target='_blank' className='font-inter text-xs text-silver underline hover:text-iron-gold transition-colors duration-150 mt-1 w-fit'>
                             Ver no Google Maps
                         </Link>
-                    </div>
+                    </div> 
                     <Link
-                        href=''
+                        href='https://wa.link/qd7uoz'
+                        target='_blank'
                         className='mt-2 bg-iron-gold border-l-2 border-t-2 border-forge-white/60 rounded-full text-center font-semibold font-inter text-obsidian text-xs px-4 py-3 uppercase shadow-[0_1px_10px] shadow-bronze hover:brightness-110 transition-all duration-150'
                     >
                         Aula Experimental

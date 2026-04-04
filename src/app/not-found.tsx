@@ -52,7 +52,7 @@ export default function NotFound() {
                         Voltar para a Home
                     </Link>
                     <Link
-                        href=''
+                        href='https://wa.link/qd7uoz'
                         className='bg-emerald border-l-2 border-t-2 border-forge-white/60 rounded-full text-center font-semibold font-inter text-forge-white px-4 py-4 flex items-center justify-center gap-2 shadow-[0_1px_10px] shadow-victory hover:brightness-110 transition-all duration-150'
                     >
                         <FaWhatsapp className='size-5' />

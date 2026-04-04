@@ -41,6 +41,7 @@ export default function ModalitieCard(props: props) {
                     <Link
                         className='bg-iron-gold border-l-2 shadow-[0_1px_10px] shadow-bronze border-t-2 rounded-full text-center w-full font-semibold font-inter border-forge-white p-4 uppercase lg:hover:brightness-110 lg:transition-all lg:duration-150'
                         href={props.link}
+                        target='_blank'
                     >
                         {props.cta}
                     </Link>

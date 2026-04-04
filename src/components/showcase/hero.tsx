@@ -5,7 +5,7 @@ import { LuCheckCheck } from 'react-icons/lu'
 
 export default function Hero() {
     return (
-        <section className='
+        <section id='hero' className='
             relative w-full min-h-screen
             flex flex-col items-center justify-end pt-27 pb-17 gap-4
             lg:flex-row lg:items-end lg:justify-start lg:pt-0 lg:pb-0 lg:gap-0
@@ -69,10 +69,10 @@ export default function Hero() {
                         </li>
                     </ul>
                 </div>
-                <Link href={''} className='bg-iron-gold border-l-2 shadow-[0_1px_10px] shadow-bronze border-t-2 rounded-full text-center font-semibold font-inter border-forge-white p-4 uppercase'>
+                <Link href={'https://wa.link/qd7uoz'} target='_blank' className='bg-iron-gold border-l-2 shadow-[0_1px_10px] shadow-bronze border-t-2 rounded-full text-center font-semibold font-inter border-forge-white p-4 uppercase'>
                     AGENDAR AULA EXPERIMENTAL
                 </Link>
-                <Link href={''} className='bg-emerald border-l-2 shadow-[0_1px_10px] shadow-victory border-t-2 rounded-full text-center font-semibold font-inter border-forge-white p-4 flex items-center justify-center text-forge-white gap-1.5'>
+                <Link href={'https://wa.link/qd7uoz'} target='_blank' className='bg-emerald border-l-2 shadow-[0_1px_10px] shadow-victory border-t-2 rounded-full text-center font-semibold font-inter border-forge-white p-4 flex items-center justify-center text-forge-white gap-1.5'>
                     <FaWhatsapp className='size-6'/> Falar no Whatsapp
                 </Link>
             </article>

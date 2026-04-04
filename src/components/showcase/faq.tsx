@@ -48,7 +48,7 @@ export default function Faq() {
     const rightFaqs = faqs.slice(half)
 
     return (
-        <section className='w-full h-fit flex flex-col gap-4 bg-obsidian items-center relative justify-center lg:gap-12 lg:py-20'>
+        <section id='faq' className='w-full h-fit flex flex-col gap-4 bg-obsidian items-center relative justify-center lg:gap-12 lg:py-20'>
             <div className='w-full h-full absolute bg-linear-to-t from-iron-gold via-black/80 to-obsidian z-1 top-0' />
             <Image src={'/FAQ.png'} alt='Iron Fight' className='object-cover' fill />
 
@@ -109,7 +109,7 @@ export default function Faq() {
                 <h2 className='font-inter text-base text-silver text-center'>
                     Escolha um horário e venha conhecer de perto.
                 </h2>
-                <Link href={''} className='bg-iron-gold border-l-2 shadow-[0_1px_10px] shadow-bronze border-t-2 rounded-full text-center w-full font-semibold font-inter border-forge-white p-4 uppercase'>
+                <Link href={'https://wa.link/qd7uoz'} target='_blank' className='bg-iron-gold border-l-2 shadow-[0_1px_10px] shadow-bronze border-t-2 rounded-full text-center w-full font-semibold font-inter border-forge-white p-4 uppercase'>
                     AGENDAR AULA EXPERIMENTAL
                 </Link>
                 <p className='font-inter text-graphite underline text-center'>Sem burocracia. Chegou, treinou.</p>

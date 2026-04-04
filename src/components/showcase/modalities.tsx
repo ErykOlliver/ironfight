@@ -9,7 +9,7 @@ const modalities = [
         poster: '/jiu.png',
         benefits: ["Foco e disciplina", "Defesa pessoal", "Força e resistência"],
         cta: 'Começar no Jiu-Jitsu',
-        link: ''
+        link: 'https://wa.link/s3lw3l'
     },
     {
         title: 'Boxe',
@@ -17,7 +17,7 @@ const modalities = [
         poster: '/boxe.png',
         benefits: ["Alto gasto calórico", "Reflexo e agilidade", "Alívio de estresse"],
         cta: 'Começar no Boxe',
-        link: ''
+        link: 'https://wa.link/92ahmo'
     },
     {
         title: 'Treinamento Funcional',
@@ -25,13 +25,13 @@ const modalities = [
         poster: '/funci.png',
         benefits: ["Emagrecimento", "Condicionamento físico", "Performance no dia a dia"],
         cta: 'Começar no Funcional',
-        link: ''
+        link: 'https://wa.link/91znhh'
     },
 ]
 
 export default function Modalities() {
     return (
-        <section className='w-full h-fit flex flex-col gap-4 bg-obsidian items-center justify-center lg:gap-12 lg:py-20'>
+        <section id='modalities' className='w-full h-fit flex flex-col gap-4 bg-obsidian items-center justify-center lg:gap-12 lg:py-20'>
 
             <header className='w-full gap-4 h-fit items-center px-7.5 justify-center flex flex-col lg:max-w-2xl lg:px-0'>
                 <h1 className='font-bebas-neue text-3xl text-forge-white text-center lg:text-5xl'>
@@ -61,7 +61,7 @@ export default function Modalities() {
                     <h2 className='font-inter text-base text-silver text-center'>
                         Dê o primeiro passo hoje e sinta a diferença já nos primeiros treinos.
                     </h2>
-                    <Link href={''} className='bg-iron-gold border-l-2 shadow-[0_1px_10px] shadow-bronze border-t-2 rounded-full text-center w-full font-semibold font-inter border-forge-white p-4 uppercase'>
+                    <Link href={'https://wa.link/qd7uoz'} target='_blank' className='bg-iron-gold border-l-2 shadow-[0_1px_10px] shadow-bronze border-t-2 rounded-full text-center w-full font-semibold font-inter border-forge-white p-4 uppercase'>
                         AGENDAR AULA EXPERIMENTAL
                     </Link>
                     <p className='font-inter text-silver underline text-center'>

@@ -11,7 +11,7 @@ const photos: { src: string, alt: string }[] = [
 
 export default function AboutGym() {
     return (
-        <section className='w-full h-fit flex flex-col gap-4 bg-obsidian items-center justify-center lg:flex-row lg:items-center lg:gap-0 lg:py-20 lg:px-20 lg:max-7xl lg:mx-auto'>
+        <section id='about-gym' className='w-full h-fit flex flex-col gap-4 bg-obsidian items-center justify-center lg:flex-row lg:items-center lg:gap-0 lg:py-20 lg:px-20 lg:max-7xl lg:mx-auto'>
 
             <div className='w-full lg:w-1/2 lg:pr-12 flex flex-col gap-4'>
                 <div className='w-full grid grid-cols-3 h-30 gap-2 items-center justify-center lg:h-72 lg:gap-3'>
@@ -66,7 +66,7 @@ export default function AboutGym() {
                     <h2 className='font-inter text-base text-silver text-center lg:text-left lg:w-full'>
                         Venha conhecer de perto e sinta a diferença no ambiente.
                     </h2>
-                    <Link href={''} className='bg-iron-gold border-l-2 shadow-[0_1px_10px] shadow-bronze border-t-2 rounded-full text-center w-full font-semibold font-inter border-forge-white p-4 uppercase'>
+                    <Link href={'https://wa.link/qd7uoz'} target='_blank' className='bg-iron-gold border-l-2 shadow-[0_1px_10px] shadow-bronze border-t-2 rounded-full text-center w-full font-semibold font-inter border-forge-white p-4 uppercase'>
                         AGENDAR AULA EXPERIMENTAL
                     </Link>
                     <p className='font-inter text-silver underline text-center lg:text-left lg:w-full'>
