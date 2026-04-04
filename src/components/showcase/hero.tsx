@@ -5,12 +5,12 @@ import { LuCheckCheck } from 'react-icons/lu'
 
 export default function Hero() {
     return (
-        <section className='relative w-full min-h-screen flex flex-col border items-center justify-end pt-27 pb-17 gap-4'>
-            <div className='w-full h-full absolute bg-linear-to-t from-black via-black/80 to-transparent -z-1 top-0' />
+        <section className='relative w-full min-h-screen flex flex-col items-center justify-end pt-27 pb-17 gap-4'>
+            <div className='w-full h-full absolute bg-linear-to-t from-obsidian via-black/80 to-transparent -z-1 top-0' />
             <div className='w-full h-full absolute bg-black/10 -z-1 top-0' />
 
             <video autoPlay loop muted playsInline className='absolute -z-2 inset-0 h-full w-full object-cover'>
-                <source src='/homeclip.mp4' type="video/webm" />
+                <source src='/homeclip.webm' type="video/webm" />
             </video>
             <header className='w-full h-fit flex flex-col px-7.5 items-start gap-4 justify-center'>
                 <h1 className='text-forge-white uppercase text-3xl font-bebas-neue'>Forje <span className='text-iron-gold'>disciplina</span>. <br /> Construa respeito. <br /> <span className='text-iron-gold'>Transforme</span> seu corpo.</h1>
