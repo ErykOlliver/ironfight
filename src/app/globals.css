@@ -63,3 +63,17 @@
     /* ── WARNING ── */
     --color-bronze: #D97706;
 }
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 16px;
+}
+
+.swiper-pagination-bullet {
+  background: #000 !important;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #F4C430 !important;
+}
