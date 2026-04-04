@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { FaStar } from 'react-icons/fa'
+import { FaFire, FaStar } from 'react-icons/fa'
 import { IoBarbell, IoBarbellSharp } from 'react-icons/io5'
 import { MasonryPhotoAlbum } from 'react-photo-album'
 import "react-photo-album/masonry.css"
@@ -15,6 +15,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Link from 'next/link'
+import CountUp from 'react-countup'
+import BenefitCard from '../interface/benefit-card'
+import { PiMapPinFill, PiUsersThreeFill } from 'react-icons/pi'
+import { SiFireship } from 'react-icons/si'
 
 
 const photos = [
@@ -35,6 +40,12 @@ const testimonials = [
     { name: "miriansantos", testimonial: "Ótimo local para colocar seus filhos e desenvolver neles obediência e respeito ao próximo." },
     { name: "miriansantos", testimonial: "Ótimo local para colocar seus filhos e desenvolver neles obediência e respeito ao próximo." },
     { name: "miriansantos", testimonial: "Ótimo local para colocar seus filhos e desenvolver neles obediência e respeito ao próximo." },
+]
+
+const benefits = [
+    { icon: <PiUsersThreeFill className='size-8' />, description: 'Aulas para todas as idades' },
+    { icon: <SiFireship className='size-8' />, description: 'Ambiente motivador todos os dias' },
+    { icon: <PiMapPinFill className='size-8' />, description: 'Localização acessível em Nova Vitória' },
 ]
 
 export default function SocialProof() {
@@ -102,6 +113,22 @@ export default function SocialProof() {
                         ))}
                     </Swiper>
                 </div>
+
+                <article className='w-full h-fit flex flex-col items-center justify-center'>
+                    <p className='font-bebas-neue text-forge-white text-2xl text-center'> <span className='text-iron-gold text-xl'> +<CountUp enableScrollSpy scrollSpyOnce scrollSpyDelay={200} start={0} end={500} duration={2.5} /> </span> <br /> ALUNOS ATIVOS</p>
+                    <div className='grid grid-cols-3 w-full h-fit items-center justify-center gap-4'>
+                        {benefits.map((b, i) => (
+                            <BenefitCard icon={b.icon} description={b.description} key={i} />
+                        ))}
+                    </div>
+                </article>
+
+                <article className='w-full gap-4 h-fit flex flex-col items-center justify-center'>
+                    <h1 className='font-inter text-xl text-forge-white uppercase font-bold text-center'>Agora é a sua vez de <span className='text-iron-gold'> começar</span>.</h1>
+                    <h2 className='font-inter text-base text-silver text-center'>Dê o primeiro passo. Sem pressão, sem experiência necessária.</h2>
+                    <Link href={''} className='bg-iron-gold border-l-2 shadow-[0_1px_10px] shadow-bronze border-t-2 rounded-full text-center w-full font-semibold font-inter border-forge-white p-4 uppercase'>AGENDAR AULA EXPERIMENTAL</Link>
+                    <p className='font-inter text-silver underline text-center'>Primeira experiência sem compromisso</p>
+                </article>
             </article>
 
             <Lightbox
