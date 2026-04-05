@@ -35,11 +35,12 @@ const photos = [
 
 const testimonials = [
     { name: "miriansantos", testimonial: "Ótimo local para colocar seus filhos e desenvolver neles obediência e respeito ao próximo." },
-    { name: "miriansantos", testimonial: "Ótimo local para colocar seus filhos e desenvolver neles obediência e respeito ao próximo." },
-    { name: "miriansantos", testimonial: "Ótimo local para colocar seus filhos e desenvolver neles obediência e respeito ao próximo." },
-    { name: "miriansantos", testimonial: "Ótimo local para colocar seus filhos e desenvolver neles obediência e respeito ao próximo." },
-    { name: "miriansantos", testimonial: "Ótimo local para colocar seus filhos e desenvolver neles obediência e respeito ao próximo." },
-    { name: "miriansantos", testimonial: "Ótimo local para colocar seus filhos e desenvolver neles obediência e respeito ao próximo." },
+    { name: "claudiobarros", testimonial: "Muito boa! Ótimo atendimento e acompanhamento dos personais!" },
+    { name: "silviadearaujo", testimonial: "Ótimo ambiente, ventilado, com ótimos profissionais, atendimento de qualidade. Profissionais atenciosos" },
+    { name: "moacisilva", testimonial: "Ótima academia e bons profissionais atenciosos RECOMENDO" },
+    { name: "neildes", testimonial: "Ótimo experiência." },
+    { name: "diolinasilva", testimonial: "Excelente atendimento. mim bem muito bem acolhida. Sempre atenciosos." },
+    { name: "pauloneves", testimonial: "Umas das melhores academia top instrutores top" },
 ]
 
 const benefits = [
