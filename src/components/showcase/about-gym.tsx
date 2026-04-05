@@ -13,7 +13,7 @@ export default function AboutGym() {
     return (
         <section id='about-gym' className='w-full h-fit flex flex-col gap-4 bg-obsidian items-center justify-center lg:flex-row lg:items-center lg:gap-0 lg:py-20 lg:px-20 lg:max-7xl lg:mx-auto'>
 
-            <div className='w-full lg:w-1/2 lg:pr-12 flex flex-col gap-4'>
+            <div className='w-full lg:w-1/2 lg:pr-12 md:flex flex-col gap-4 hidden'>
                 <div className='w-full grid grid-cols-3 h-30 gap-2 items-center justify-center lg:h-72 lg:gap-3'>
                     {photos.map((photo, i) => (
                         <div key={i} className='relative w-full h-full lg:rounded-xl lg:overflow-hidden'>
@@ -50,6 +50,21 @@ export default function AboutGym() {
                     </h2>
                     <p className='text-forge-white font-inter font-semibold text-md'>Veja onde sua evolução acontece:</p>
                 </header>
+                <div className='w-full grid grid-cols-3 h-30 gap-2 px-7.5 md:hidden items-center justify-center lg:h-72 lg:gap-3'>
+                    {photos.map((photo, i) => (
+                        <div key={i} className='relative w-full h-full lg:rounded-xl lg:overflow-hidden'>
+                            <Image
+                                fill
+                                quality={100}
+                                priority
+                                src={photo.src}
+                                alt={photo.alt}
+                                className='w-full object-cover rounded-xl'
+                                sizes='(min-width: 1024px) 30vw, 80vw'
+                            />
+                        </div>
+                    ))}
+                </div>
 
                 <div className='lg:hidden w-full px-7.5 h-fit'>
                     <p className='text-silver font-inter text-md text-justify'>

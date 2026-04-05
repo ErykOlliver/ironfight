@@ -50,7 +50,7 @@ export default function Faq() {
     return (
         <section id='faq' className='w-full h-fit flex flex-col gap-4 bg-obsidian items-center relative justify-center lg:gap-12 lg:py-20'>
             <div className='w-full h-full absolute bg-linear-to-t from-iron-gold via-black/80 to-obsidian z-1 top-0' />
-            <Image src={'/FAQ.png'} alt='Iron Fight' className='object-cover' fill />
+            <Image src={'/FAQ.png'} alt='Iron Fight' priority className='object-cover' fill />
 
             <header className='w-full gap-4 h-fit items-center relative z-2 px-7.5 pt-10 justify-center flex flex-col lg:max-w-2xl lg:px-0 lg:pt-0'>
                 <h1 className='font-bebas-neue text-3xl text-forge-white text-center lg:text-5xl'>

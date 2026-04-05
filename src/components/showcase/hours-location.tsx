@@ -43,7 +43,7 @@ export default function HoursAndLocation() {
                     <article className='w-full bg-carbon border border-silver/30 shadow-xs shadow-bronze gap-2.5 h-fit flex flex-col items-center justify-center p-2.5 rounded-md lg:w-1/2'>
                         <div className='relative rounded-lg w-full h-50 shadow-xs shadow-black lg:h-full lg:min-h-44'>
                             <div className='w-full h-full absolute bg-linear-to-t from-black via-black/50 rounded-lg to-black z-1 top-0' />
-                            <Image src={"/gym2.png"} alt='Fachada Iron Fight' fill className='object-cover -z-0 rounded-lg' />
+                            <Image src={"/gym2.png"} alt='Fachada Iron Fight' priority fill className='object-cover -z-0 rounded-lg' />
                             <div className='w-full h-full relative z-2 flex flex-col items-center gap-2.5 justify-center p-2.5'>
                                 <div className='flex w-fit h-fit items-center justify-center flex-col gap-2.5'>
                                     <FaMapPin className='text-iron-gold size-6' />

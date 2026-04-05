@@ -20,7 +20,7 @@ export default function ModalitieCard(props: props) {
             lg:h-full lg:transition-all lg:duration-200 lg:hover:-translate-y-1 lg:hover:shadow-bronze/70 lg:hover:shadow-[3px_3px_14px]
         '>
             <div className='relative w-full h-38 rounded-xl lg:h-52'>
-                <Image src={props.poster} alt={`${props.title} Poster`} fill className='object-cover rounded-xl' />
+                <Image src={props.poster} alt={`${props.title} Poster`} priority fill className='object-cover rounded-xl' />
                 <div className='w-full h-full absolute bg-linear-to-t from-carbon via-black/80 to-transparent z-0 top-0' />
             </div>
 

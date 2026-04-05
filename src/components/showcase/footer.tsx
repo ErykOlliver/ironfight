@@ -15,7 +15,7 @@ export default function Footer() {
 
                 <div className='flex flex-col gap-3 lg:max-w-xs'>
                     <div className='flex items-center gap-3'>
-                        <Image src='/logo.svg' alt='Iron Fight' width={38} height={38} />
+                        <Image src='/logo.svg' alt='Iron Fight' priority width={38} height={38} />
                         <span className='font-bebas-neue text-2xl text-forge-white tracking-wide'>Iron Fight</span>
                     </div>
                     <p className='font-inter text-sm text-silver leading-relaxed'>
