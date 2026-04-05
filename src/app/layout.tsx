@@ -8,11 +8,11 @@ import Script from "next/script";
 export const metadata = {
   title: 'Iron Fight Academia | Musculação e Luta em Camaçari',
   description: 'Academia de musculação, boxe e jiu-jitsu em Camaçari, BA. Próximo ao centro de Camaçari. Venha treinar!',
-  keywords: ['academia camaçari', 'musculação camaçari', 'academia nova vitória camaçari'],
+  keywords: ['academia camaçari', 'musculação camaçari', 'academia nova vitória camaçari', 'academias em camaçari ba', 'iron fight academia', 'iron fight camaçari'],
   openGraph: {
     title: 'Iron Fight Academia – Camaçari, BA',
     description: 'Treine musculação e artes marciais em Camaçari. Equipamentos modernos.',
-    url: 'https://ironfight.com.br',
+    url: 'https://ironfight.vercel.app/',
     locale: 'pt_BR',
   },
 }
@@ -21,7 +21,7 @@ const schemaData = {
   "@context": "https://schema.org",
   "@type": "HealthClub",
   "name": "Iron Fight Academia",
-  "url": "https://ironfight.com.br",
+  "url": "https://ironfight.vercel.app/",
   "telephone": "+55-71-8951-4831",
   "address": {
     "@type": "PostalAddress",
