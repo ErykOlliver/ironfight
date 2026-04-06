@@ -20,7 +20,6 @@ export default function AboutGym() {
                             <Image
                                 fill
                                 quality={100}
-                                priority
                                 src={photo.src}
                                 alt={photo.alt}
                                 className='w-full object-cover rounded-xl'
@@ -56,7 +55,6 @@ export default function AboutGym() {
                             <Image
                                 fill
                                 quality={100}
-                                priority
                                 src={photo.src}
                                 alt={photo.alt}
                                 className='w-full object-cover rounded-xl'

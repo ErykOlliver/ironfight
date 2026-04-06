@@ -23,7 +23,7 @@ export default function NotFound() {
             <div className='relative z-10 flex flex-col items-center gap-6 lg:gap-8 lg:max-w-xl'>
 
                 <div className='flex items-center gap-3'>
-                    <Image src='/logo.svg' alt='Iron Fight' priority width={40} height={40} />
+                    <Image src='/logo.svg' alt='Iron Fight' width={40} height={40} />
                     <span className='font-bebas-neue text-2xl text-forge-white tracking-wide'>Iron Fight</span>
                 </div>
 
